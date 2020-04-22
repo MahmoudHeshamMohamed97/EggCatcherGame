@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/index_style.css" />
+        <title>Happy Egg Catcher</title>
+    </head>
+    <body>
+
+
+        <audio id="start">
+            <source src="images/soundTracks/Cut_y2mate.com - اعلان حلواني اخوان مطلوب فرخه بنت بنوت_QXzHD-BKYXU.mp3" type="audio/mpeg" />
+        </audio>
+
+        <audio id="end">
+            <source src="images/soundTracks/y2mate.com - Lose sound effects_jAIlKqL3nHo.mp3" type="audio/mpeg" />
+        </audio>
+
+        <audio id="picked">
+            <source src="images/soundTracks/Cut_Ding Sound Effect.mp3" type="audio/mpeg" />
+        </audio>
+
+        <audio id="brocked">
+            <source src="images/soundTracks/Punch Sound Effect.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="game">
+            
+            <div class="infoBar">
+                <h3 class="p-2">Score: <span id="score">0</span></h3>
+                <h3 class="p-2">Lifes: <span id="lifes">10</span></h3>
+            </div>
+
+            <div class="chickens">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="chickenImage">
+                                <img src="images/Happy_hen.svg" class="img-fluid" />
+                            </div>
+                            <div class="eggImage">
+                                <img src="images/Happy_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="chickenImage">
+                                <img src="images/Happy_hen.svg" class="img-fluid" />
+                            </div>
+                            <div class="eggImage">
+                                <img src="images/Happy_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="chickenImage">
+                                <img src="images/Happy_hen.svg" class="img-fluid" />
+                            </div>
+                            <div class="eggImage">
+                                <img src="images/Happy_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playSection">
+                <div class="happyEggs" >
+                    <h1>HAPPY EGGS</h1>
+                    <h1 id="finalScore"></h1>
+                    <button id="playBtn" >Play</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="basket">
+                    <h3 id="currentScore"></h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="brokenEgg">
+                                <img src="images/Broken_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="brokenEgg">
+                                <img src="images/Broken_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="brokenEgg">
+                                <img src="images/Broken_Egg.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/jquery-3.4.1.js" ></script>
+        <script src="js/popper.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/index.js" ></script>
+    </body>
+</html>
